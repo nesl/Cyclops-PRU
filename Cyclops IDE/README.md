@@ -1,11 +1,6 @@
-
-Yi-Fan Zhang
-
-yifanz@ucla.edu
-
 #### Table of Contents
 
-1. [Project Proposal](#project-proposal)
+1. [Cyclops](#project-proposal)
   * [Objectives](#project-objectives)
 2. [Background](#background)
   * [Programmable Realtime Unit Subsystem](#programmable-realtime-unit-subsystem)
@@ -18,7 +13,6 @@ yifanz@ucla.edu
 4. [References](#references)
 5. [Open Source](#open-source-attributions)
 
-## Project Proposal 
 ### Cyclops: PL + Compiler + IDE for making PRUs easier to use
 
 ![alt text](https://github.com/yifanz/CSM213A/raw/master/images/ide_screenshot.png "ide")
@@ -32,7 +26,7 @@ Despite these advantages, PRUs are often overlooked by application developers be
 
 It would be convenient to have a [mbed](https://developer.mbed.org) style development environment along with a high level language for experimenting on the PRU. The aim of this project is to make PRU programming easier by adding automated configuration for device tree setup, creating a high level programming language for the PRU and provide an IDE which hides all the boilerplate and configuration. This will be a deep dive on language and compiler implementation for the PRU hardware as well as a bit of Linux kernel module development.
 
-#### Project Objectives
+#### Objectives
 
 1. Automate PRU and pinmux setup that will handle the Linux device tree configuration.
 2. Implement a custom kernel driver for the pinmux to get around limitations of device tree overlays.
