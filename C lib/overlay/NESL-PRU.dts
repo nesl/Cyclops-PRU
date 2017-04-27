@@ -1,0 +1,28 @@
+/*
+ * Copyright (c) Regents of the University of California, 2017. All rights reserved.
+ * See LICENSE and ATTRIB in the repository root.
+ */
+
+/*
+ * Based on Device Tree Overlay for enabling the pins that are used in
+ * Chapter 13 of the book "Exploring BeagleBone: Tools and
+ * Techniques for Building with Embedded Linux" by Derek Molloy, 2014
+ * ISBN 9781118935125. Please see the file ATTRIB in the repository root
+ * directory for copyright and GNU GPLv3 license information.
+ */
+/dts-v1/;
+/plugin/;
+
+/ {
+   compatible = "ti,beaglebone", "ti,beaglebone-black";
+
+   part-number = "NESL-PRU";
+   version = "00A0";
+
+   fragment@1 {         // Enable the PRUSS
+      target = <&pruss>;
+      __overlay__ {
+         status = "okay";
+      };
+   };
+};

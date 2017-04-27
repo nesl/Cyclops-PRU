@@ -1,0 +1,15 @@
+/dts-v1/;
+/plugin/;
+
+// dtc -O dtb -I dts -o PRU-ACTIVATE-00A0.dtbo -b 0 -@ PRU-ACTIVATE-00A0.dts
+/ {
+	compatible = "ti,beaglebone", "ti,beaglebone-green", "ti,beaglebone-black";
+	part-number = "PRU-ACTIVATE";
+	version = "00A0";
+	fragment@0 {
+		target = <&pruss>;
+		__overlay__ {
+			status = "okay";
+		};
+	};
+};

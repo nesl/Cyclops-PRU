@@ -1,0 +1,8 @@
+# Rules file for the pin-pirate device driver to allow non-root access.
+#
+# You can find the KERNEL and SUBSYSTEM params by running udevadm
+# udevadm info -a -p /sys/class/pinmux/pinpirate
+#
+# Copy this file to:
+# /etc/udev/rules.d
+KERNEL=="pinpirate", SUBSYSTEM=="pinmux", MODE="0666"

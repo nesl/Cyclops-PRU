@@ -1,0 +1,23 @@
+ATTRIBUTIONS/CREDITS
+
+This project uses open source code. The source code and
+corresponding license information is listed below.
+
+Beaglebone PRU IO Library
+AUTHOR: Rafael Vega
+URL: https://github.com/outer-space-sounds/beaglebone-pruio
+LICENSE: GPLv3
+
+"Exploring BeagleBone: Tools and Techniques for Building with Embedded Linux"
+ISBN: 9781118935125
+AUTHOR: Derek Molloy
+URL: https://github.com/derekmolloy/exploringBB
+LICENSE: GPLv3
+
+Quality of Time Stack for Linux
+URL: https://bitbucket.org/rose-line/qot-stack
+LICENSE: BSD 2-Clause
+
+Linux Kernel
+URL: https://www.kernel.org
+LICENSE: GPLv2

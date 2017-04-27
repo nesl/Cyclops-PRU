@@ -1,0 +1,66 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    /* what boards are we compatible with */
+    compatible = "ti,beaglebone", "ti,beaglebone-black";
+
+    /* identification */
+    part-number = "NESL-PRU-QOT";
+
+    /* special version ignores EEPROM  */
+    version = "00A0";
+
+    /* Resources used */
+    exclusive-use =
+        "P8.9",  /*  TIMER5  */
+        "P8.10", /*  TIMER6  */
+        "P8.8";  /*  TIMER7  */
+
+    /* Pin multiplexing */
+    fragment@0 {
+        target = <&am33xx_pinmux>;
+        __overlay__ {
+            qot_am335x_pins: qot_am335x_pins {
+                pinctrl-single,pins = <
+                    0x9C  0x02      /* P8.9   0x22 = INP PD, 0x02 = OUT PD */
+                    0x98  0x22      /* P8.10  0x22 = INP PD, 0x02 = OUT PD */
+                    0x94  0x02      /* P8.8   0x22 = INP PD, 0x02 = OUT PD */
+                >;
+            };
+        };
+    };
+
+    /* Setup the am335x timer subsystem as a PHC */
+    fragment@1 {
+        target-path="/";
+        __overlay__ {
+            qot_am335x {
+                compatible = "qot_am335x";
+                status = "okay";
+                pinctrl-names = "default";
+                pinctrl-0 = <&qot_am335x_pins>;
+                core  = <&timer3 0>; /* 0 = SYS, 1 = RTC, 2 = TCLKIN */
+                sched = <&timer4 0>;
+                pin3 {
+                    label = "TIMER7";
+                    timer = <&timer7>;
+                    gpios = <&gpio2 3 0>;
+                };
+                pin2 {
+                    label = "TIMER6";
+                    timer = <&timer6>;
+                    gpios = <&gpio2 4 0>;
+                };
+                pin1 {
+                    label = "TIMER5";
+                    timer = <&timer5>;
+                    gpios = <&gpio2 5 0>;
+                };
+                pin0 {
+                    label = "NOT_USED";
+                };
+            };
+        };
+    };
+};
