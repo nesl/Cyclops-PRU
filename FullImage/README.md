@@ -6,7 +6,9 @@ This is aimed to provide a reproducible environment for anyone who wants wants t
 
 ## How to Flash to SD Card
 
-Download [nesl-qot-4.1.12-bone-rt-r16-4gb.img.xz](https://github.com/nesl/Cyclops-PRU/blob/master/images/nesl-qot-4.1.12-bone-rt-r16-4gb.img.xz).
+Download [nesl-qot-4.1.12-bone-rt-r16-4gb.img.xz](https://github.com/nesl/Cyclops-PRU/blob/master/FullImage/images/nesl-qot-4.1.12-bone-rt-r16-4gb.img.xz).
+
+
 After decompressing the image with `xz`, copy the image to an SD card with the `dd` command. Find the device node of your SD card. In my case it happens to be `/dev/rdisk2`, but this most likely will **NOT** be the case for you. If you copy to the wrong device node, you may **erase your hard disk**.
 
 ```
