@@ -1,3 +1,6 @@
+Go to this repo to get the images 
+https://github.com/nesl/ucla-nesl-pru-sys-images/tree/master/images
+
 # UCLA NESL PRU System Images
 
 This repository holds the OS images for working on the NESL PRU library.
