@@ -1,5 +1,5 @@
-Go to this repo to get the images 
-https://github.com/nesl/ucla-nesl-pru-sys-images/tree/master/images
+Go to this link to get the image
+https://drive.google.com/file/d/0B-N9bMQfpW6gdUFLUjVvVHR0ZFk/view?usp=sharing
 
 # UCLA NESL PRU System Images
 
