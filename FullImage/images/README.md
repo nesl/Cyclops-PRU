@@ -1,5 +1,5 @@
 ### 4.1.12-bone-rt with QoT
-I recommend using the [nesl-qot-4.1.12-bone-rt-r16-4gb](https://github.com/yifanz/ucla-nesl-pru-sys-images/blob/master/images/nesl-qot-4.1.12-bone-rt-r16-4gb.img.xz) image which has the QoT stack installed.
+I recommend using the [nesl-qot-4.1.12-bone-rt-r16-4gb](https://drive.google.com/file/d/0B-N9bMQfpW6gdUFLUjVvVHR0ZFk/view?usp=sharing) image which has the QoT stack installed.
 You will neet the QoT stack in order to run the time synchronization examples.
 
 ### 3.8.13-bone50 Vanilla
