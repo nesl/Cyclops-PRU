@@ -1,5 +1,6 @@
-Go to this link to get the image
-https://drive.google.com/file/d/0B-N9bMQfpW6gdUFLUjVvVHR0ZFk/view?usp=sharing
+The nesl-qot-4.1.12-bone-rt-r16-4gb image is available at the following link
+[link](https://drive.google.com/file/d/1BbqrlW7soqthktslKXc-ADzNKqw2H8XY/view?usp=share_link).
+
 
 # UCLA NESL PRU System Images
 
